@@ -1,13 +1,60 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Prueba</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <title>Productos Deportivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .productos {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .producto {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .producto img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .precio {
+            font-size: 1.2em;
+            color: #27ae60;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Productos Deportivos</h1>
+    <div class="productos">
+        <div class="producto">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Balón">
+            <h2>Balón</h2>
+            <div class="precio">$20.00</div>
+        </div>
+        <div class="producto">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048956.png" alt="Zapatos">
+            <h2>Zapatos</h2>
+            <div class="precio">$45.00</div>
+        </div>
+        <div class="producto">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048955.png" alt="Guantes">
+            <h2>Guantes</h2>
+            <div class="precio">$15.00</div>
+        </div>
+    </div>
 </body>
 </html>
